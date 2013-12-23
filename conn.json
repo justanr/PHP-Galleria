@@ -1,0 +1,7 @@
+{
+    "dsn":"databasetype",
+    "db":"databasename",
+    "host":"host",
+    "user":"user",
+    "passwd":"password"
+}
