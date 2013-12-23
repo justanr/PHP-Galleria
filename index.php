@@ -10,10 +10,7 @@
 
     $pictures = get_pictures_from_gallery($dbh, $gallery['g_id']);
 
-
-    # Why not a HTTP superglobal? I don't know.
-    # I blame the 802 Woodchuck.
-    $domain = "http://75.65.2.168:8080";
+    $domain = 'http://yoursite.com';
 
     # I like storing some of my patterns in an array.
     $patterns = array(
@@ -24,10 +21,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kaityln Garrett Photography.</title>
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
-        <link rel="stylesheet" href="static/css/kg.css" type="text/css" />
-        
+        <title>Example PHP-Galleria Site</title>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">        
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <script src="http://<?php echo $domain; ?>/galleria/galleria-1.2.9.min.js"></script>
 
@@ -53,7 +48,7 @@
     <body>
         <div class="pure-g-r">
             <div class="pure-u-1-1">
-                <h1>Kaitlyn Garrett Photography</h1>
+                <h1>Example PHP-Galleria Site</h1>
             </div>
 
             <div class="pure-u-1-6">
